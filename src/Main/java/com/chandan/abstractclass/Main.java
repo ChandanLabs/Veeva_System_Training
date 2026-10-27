@@ -1,17 +1,22 @@
+package com.chandan.abstractclass;
 // Now, you’re ready to test your application.
-// Start by declaring an object of SendButtonClass.
+// Start by declaring an object of chandan.SendButtonClass.
 // Call the setCaption() method to set its caption.
 // Assign the recipient's email ID, and put the message to be sent by calling setSendTo() and setMessage() methods. Finally, call the buttonPress() method.
 
 abstract class AbstractButtonClass {
-    String caption;
+    private String caption;
 
-    public void SetCaption(String caption) {
+    public void setCaption(String caption) {
         this.caption = caption;
     }
 
     public String getCaption() {
         return this.caption;
+    }
+
+    public void SetCaption(String caption) {
+        setCaption(caption);
     }
 }
 
@@ -40,15 +45,17 @@ class SendButtonClass extends AbstractButtonClass implements ButtonPress {
 public class Main {
     public static void main(String[] args) {
         SendButtonClass sendButton = new SendButtonClass();
-        sendButton.SetCaption("Send");
+        sendButton.setCaption("Send");
         sendButton.setSendTo("a@b.com");
         sendButton.setMessage("Hello World");
         sendButton.buttonPress();
+
+        System.out.println("Caption: " + sendButton.getCaption());
     }
 }
 
 /*
-abstract class AbstractButtonClass {
+abstract class chandan.AbstractButtonClass {
     String caption;
 
     public void SetCaption(String caption) {
@@ -60,11 +67,11 @@ abstract class AbstractButtonClass {
     }
 }
 
-interface ButtonPress {
+interface chandan.ButtonPress {
     void buttonPress();
 }
 
-class ForwardButtonClass extends AbstractButtonClass implements ButtonPress {
+class ForwardButtonClass extends chandan.AbstractButtonClass implements chandan.ButtonPress {
     String forwardTo;
     String message;
 
@@ -83,7 +90,7 @@ class ForwardButtonClass extends AbstractButtonClass implements ButtonPress {
     }
 }
 
-public class Main {
+public class chandan.Main {
     public static void main(String[] args) {
         ForwardButtonClass forwardButton = new ForwardButtonClass();
         forwardButton.SetCaption("Forward");
