@@ -16,7 +16,7 @@
 
 ## 📌 Overview
 
-A hands-on Java Automation Engineering repository focused on learning, practising, and implementing software testing concepts and automation tools aligned with the **Veeva Associate Automation Engineer curriculum**.
+Functional_interface.A hands-on Java Automation Engineering repository focused on learning, practising, and implementing software testing concepts and automation tools aligned with the **Veeva Associate Automation Engineer curriculum**.
 
 ## 🛠️ Tech Stack
 
@@ -39,7 +39,7 @@ A hands-on Java Automation Engineering repository focused on learning, practisin
 
 ```mermaid
 flowchart TD
-    A[Testing Fundamentals] --> B[Core Java]
+    Functional_interface.A[Testing Fundamentals] --> B[Core Java]
     B --> C[OOP and Collections]
     C --> D[Streams and Exception Handling]
     D --> E[Maven and Git]
@@ -52,7 +52,7 @@ flowchart TD
     J --> K[Integrated Automation Projects]
     K --> L[Debugging and Interview Practice]
 
-    style A fill:#dbeafe,stroke:#2563eb,color:#111827
+    style Functional_interface.A fill:#dbeafe,stroke:#2563eb,color:#111827
     style F fill:#dcfce7,stroke:#16a34a,color:#111827
     style H fill:#dcfce7,stroke:#16a34a,color:#111827
     style K fill:#fef3c7,stroke:#d97706,color:#111827
@@ -93,7 +93,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A[Understand Requirements] --> B[Design Test Cases]
+    Functional_interface.A[Understand Requirements] --> B[Design Test Cases]
     B --> C[Implement Automation]
     C --> D[Execute Tests]
     D --> E{Pass?}

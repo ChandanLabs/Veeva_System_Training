@@ -90,7 +90,7 @@ class ForwardButtonClass extends chandan.AbstractButtonClass implements chandan.
     }
 }
 
-public class chandan.Main {
+public class chandan.Functional_interface.Main {
     public static void main(String[] args) {
         ForwardButtonClass forwardButton = new ForwardButtonClass();
         forwardButton.SetCaption("Forward");
