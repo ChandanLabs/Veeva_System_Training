@@ -7,7 +7,8 @@ public class Main {
                 System.out.println("In show");
             }
         };
-//        A obj = new B();
-//        obj.show();
+
+//        A obj2 = new B();
+//        obj2.show();
     }
 }
