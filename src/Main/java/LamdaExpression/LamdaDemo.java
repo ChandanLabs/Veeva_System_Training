@@ -1,4 +1,4 @@
-package com.chandan.abstractclass.LamdaExpression;
+package LamdaExpression;
 
 @FunctionalInterface
 public interface LamdaDemo {
