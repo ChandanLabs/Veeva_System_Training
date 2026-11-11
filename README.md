@@ -1,4 +1,4 @@
-# Java Automation Engineering 🚀
+              # Java Automation Engineering 🚀
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=Java+%7C+Selenium+%7C+TestNG;UI+Automation+%7C+API+Testing;Playwright+%7C+REST+Assured;Learning+by+Building+and+Testing" alt="Animated Java Automation Engineering banner" />
