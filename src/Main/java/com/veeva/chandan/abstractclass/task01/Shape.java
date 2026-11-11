@@ -1,4 +1,4 @@
-package com.chandan.abstractclass.task01;
+package com.veeva.chandan.abstractclass.task01;
 
 public abstract class Shape {
     //what if the variable is declared as private once think about it

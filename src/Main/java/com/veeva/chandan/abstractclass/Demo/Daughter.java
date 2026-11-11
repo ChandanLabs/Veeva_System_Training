@@ -1,4 +1,4 @@
-package com.chandan.abstractclass.Demo;
+package com.veeva.chandan.abstractclass.Demo;
 
 public class Daughter extends Parent {
     @Override

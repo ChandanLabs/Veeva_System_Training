@@ -1,4 +1,4 @@
-package com.chandan.abstractclass;
+package com.veeva.chandan.abstractclass;
 // Now, you’re ready to test your application.
 // Start by declaring an object of chandan.SendButtonClass.
 // Call the setCaption() method to set its caption.
