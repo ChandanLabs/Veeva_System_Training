@@ -34,6 +34,10 @@ what are the resources required to run a test project
 >
 
 
+what is web driver and why we are using ChromeDriver
+>web driver is interface in selenium 
+
+
 
 
 
