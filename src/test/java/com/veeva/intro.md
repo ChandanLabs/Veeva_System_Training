@@ -37,6 +37,17 @@ what are the resources required to run a test project
 what is web driver and why we are using ChromeDriver
 >web driver is interface in selenium 
 
+why we are using webdriver
+>Browser is doesn't know about 
+> Third party java library
+> 
+> 
+
+*selenium uses weblocators to idenfy the web elements 
+by using 8 locators selenium identify the web locators
+    id, name, className, tagname, linktest, partial link test, x path , css selector
+
+
 
 
 
