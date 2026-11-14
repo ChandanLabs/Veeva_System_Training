@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selenium WebDriver Practice</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 30px 15px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 520px;
+      padding: 28px 32px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      color: #222222;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    label.field-label {
+      display: block;
+      font-weight: bold;
+      font-size: 14px;
+      color: #333333;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 9px 12px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      font-size: 14px;
+      color: #333333;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 75px;
+    }
+
+    .option-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 14px;
+      color: #333333;
+    }
+
+    .option-group label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    input[type="file"] {
+      font-size: 13px;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 18px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button[type="submit"] {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    button[type="reset"] {
+      background-color: #6c757d;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h1>Selenium WebDriver Practice Form</h1>
+
+  <form id="practice-form" action="#" method="post" enctype="multipart/form-data">
+    <!-- Username -->
+    <div class="form-group">
+      <label class="field-label" for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" />
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label class="field-label" for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" />
+    </div>
+
+    <!-- Comments -->
+    <div class="form-group">
+      <label class="field-label" for="comments">Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Your comments..."></textarea>
+    </div>
+
+    <!-- Hobbies -->
+    <div class="form-group">
+      <label class="field-label">Hobbies:</label>
+      <div class="option-group">
+        <label><input type="checkbox" id="hobby-reading" name="hobbies" value="Reading" /> Reading</label>
+        <label><input type="checkbox" id="hobby-sports" name="hobbies" value="Sports" /> Sports</label>
+        <label><input type="checkbox" id="hobby-music" name="hobbies" value="Music" /> Music</label>
+      </div>
+    </div>
+
+    <!-- Gender -->
+    <div class="form-group">
+      <label class="field-label">Gender:</label>
+      <div class="option-group">
+        <label><input type="radio" id="gender-male" name="gender" value="Male" /> Male</label>
+        <label><input type="radio" id="gender-female" name="gender" value="Female" /> Female</label>
+      </div>
+    </div>
+
+    <!-- Country -->
+    <div class="form-group">
+      <label class="field-label" for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="">- Select Country -</option>
+        <option value="india">India</option>
+        <option value="usa">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+      </select>
+    </div>
+
+    <!-- Upload File -->
+    <div class="form-group">
+      <label class="field-label" for="file-upload">Upload File:</label>
+      <input type="file" id="file-upload" name="fileUpload" />
+    </div>
+
+    <!-- Birthdate -->
+    <div class="form-group">
+      <label class="field-label" for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" name="birthdate" />
+    </div>
+
+    <!-- Volume -->
+    <div class="form-group">
+      <label class="field-label" for="volume">Volume:</label>
+      <input type="range" id="volume" name="volume" min="0" max="100" value="50" />
+    </div>
+
+    <!-- Submit / Reset -->
+    <div class="btn-group">
+      <button type="submit" id="submit-btn">Submit</button>
+      <button type="reset" id="reset-btn">Reset</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
