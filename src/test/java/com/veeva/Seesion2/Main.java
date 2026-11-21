@@ -24,11 +24,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
             Thread.sleep(2000);
             driver.findElement(By.name("roll_no")).click();
 
-            driver.manage().;
+            driver.manage().window().fullscreen();
 
             Thread.sleep(5000);
             driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Abc#321");
-            System.out.println(driver.getAttribute());
+            System.out.println(driver.getTitle());
 
         }
     }
