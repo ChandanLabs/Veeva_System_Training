@@ -90,7 +90,17 @@ Example: driver.findElement(By.cssSelector("input[type='password']"));
 Example: driver.findElement(By.xpath("//select[@id='country']"));
 
 
-
+>Verification and validation
+Verification and Validation (V&V) are the two foundational pillars of quality assurance used
+across software engineering, manufacturing, and project management to ensure a product is both
+technically sound and fit for its intended purpose.
+> • Verification ("Are we building the product right?"): 
+A quality control process that evaluates whether a product, service, or system complies with
+regulations, requirements, specifications, or imposed conditions at each phase of development. It is mostly static (does not require running the actual software/product).
+> • Validation ("Are we building the right product?"): 
+A quality assurance process that evaluates whether the final product actually meets the business
+needs, expectations, and real-world requirements of the end-user. It is dynamic 
+(requires executing and interacting with the working product).
 
 
 
